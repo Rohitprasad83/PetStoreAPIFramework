@@ -1,4 +1,4 @@
-package utilities;
+package api.utilities;
 import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import java.text.SimpleDateFormat;

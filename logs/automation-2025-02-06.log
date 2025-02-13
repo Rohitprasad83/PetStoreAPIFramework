@@ -1,0 +1,147 @@
+2025-02-06 00:11:06 INFO  BaseTest:12 - Starting test execution
+2025-02-06 00:11:09 INFO  BaseTest:13 - Response Body: {"Test Update":1,"sold":14,"string":607,"NOT available":1,"sold ":1,"pending":15,"available":272}
+2025-02-06 00:11:09 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:11:09 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:41:09 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:11:11 INFO  BaseTest:13 - Response Body: {"id":9,"petId":0,"quantity":3,"shipDate":"2025-02-05T18:41:06.158+0000","status":"placed","complete":false}
+2025-02-06 00:11:11 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:11:11 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:41:11 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:17:25 INFO  BaseTest:12 - Starting test execution
+2025-02-06 00:17:25 INFO  BaseTest:29 - test get inventory method started
+2025-02-06 00:17:28 INFO  BaseTest:13 - Response Body: {"Test Update":1,"sold":16,"string":598,"NOT available":1,"sold ":1,"pending":14,"available":277,"peric":4}
+2025-02-06 00:17:28 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:17:28 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:47:29 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:17:28 INFO  BaseTest:44 - test get order method started
+2025-02-06 00:17:31 INFO  BaseTest:13 - Response Body: {"code":1,"type":"error","message":"Order not found"}
+2025-02-06 00:17:31 INFO  BaseTest:19 - Response Status: HTTP/1.1 404 Not Found
+2025-02-06 00:17:31 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:47:31 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:17:31 INFO  BaseTest:37 - test post order method started
+2025-02-06 00:17:36 INFO  BaseTest:13 - Response Body: {"id":3,"petId":0,"quantity":5,"shipDate":"2025-02-05T18:47:25.250+0000","status":"placed","complete":true}
+2025-02-06 00:17:36 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:17:36 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:47:37 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:18:56 INFO  BaseTest:12 - Starting test execution
+2025-02-06 00:18:56 INFO  BaseTest:29 - test get inventory method started
+2025-02-06 00:19:00 INFO  BaseTest:13 - Response Body: {"Test Update":1,"sold":18,"string":599,"NOT available":1,"sold ":1,"pending":14,"available":275,"peric":4}
+2025-02-06 00:19:00 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:19:00 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:49:00 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:19:00 INFO  BaseTest:37 - test post order method started
+2025-02-06 00:19:02 INFO  BaseTest:13 - Response Body: {"id":5,"petId":0,"quantity":6,"shipDate":"2025-02-05T18:48:56.617+0000","status":"placed","complete":false}
+2025-02-06 00:19:02 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:19:02 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:49:02 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:19:02 INFO  BaseTest:44 - test get order method started
+2025-02-06 00:19:04 INFO  BaseTest:13 - Response Body: {"id":5,"petId":0,"quantity":6,"shipDate":"2025-02-05T18:48:56.617+0000","status":"placed","complete":false}
+2025-02-06 00:19:04 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:19:04 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:49:05 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:22:15 INFO  BaseTest:12 - Starting test execution
+2025-02-06 00:22:15 INFO  BaseTest:29 - test get inventory method started
+2025-02-06 00:22:23 INFO  BaseTest:13 - Response Body: {"Test Update":1,"sold":18,"string":591,"NOT available":1,"sold ":1,"available in friday only":1,"pending":14,"available":281,"peric":4}
+2025-02-06 00:22:23 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:22:23 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:52:23 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:22:23 INFO  BaseTest:37 - test post order method started
+2025-02-06 00:22:41 INFO  BaseTest:12 - Starting test execution
+2025-02-06 00:22:41 INFO  BaseTest:29 - test get inventory method started
+2025-02-06 00:22:44 INFO  BaseTest:13 - Response Body: {"Test Update":1,"sold":17,"string":593,"NOT available":1,"sold ":1,"available in friday only":1,"pending":14,"available":281,"peric":4}
+2025-02-06 00:22:44 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:22:44 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:52:45 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:22:44 INFO  BaseTest:37 - test post order method started
+2025-02-06 00:22:46 INFO  BaseTest:13 - Response Body: {"id":7,"petId":0,"quantity":5,"shipDate":"2025-02-05T18:52:41.193+0000","status":"placed","complete":false}
+2025-02-06 00:22:46 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:22:46 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:52:46 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:22:46 INFO  BaseTest:44 - test get order method started
+2025-02-06 00:22:48 INFO  BaseTest:13 - Response Body: {"id":7,"petId":0,"quantity":5,"shipDate":"2025-02-05T18:52:41.193+0000","status":"placed","complete":false}
+2025-02-06 00:22:48 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:22:48 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:52:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-06 00:22:48 INFO  BaseTest:52 - test delete order method started
+2025-02-06 00:22:51 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"7"}
+2025-02-06 00:22:51 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-06 00:22:51 INFO  BaseTest:16 - Response Headers: Date=Wed, 05 Feb 2025 18:52:52 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)

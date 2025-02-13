@@ -1,0 +1,215 @@
+2025-02-04 23:57:17 INFO  BaseTest:10 - Starting test execution
+2025-02-04 23:57:17 INFO  BaseTest:19 - -----------------------------------
+2025-02-04 23:57:17 INFO  BaseTest:20 - starting the automation suite
+2025-02-04 23:57:17 INFO  BaseTest:22 - User Payload initialization has been started
+2025-02-04 23:57:17 INFO  BaseTest:32 - User Payload initialization is completed
+2025-02-04 23:57:18 INFO  BaseTest:37 - test create user name started
+2025-02-04 23:57:18 INFO  BaseTest:38 - username used for creating user is pinkie.mcclure
+2025-02-04 23:57:20 INFO  BaseTest:40 - Response Body: {"code":200,"type":"unknown","message":"1904288897"}
+2025-02-04 23:57:20 INFO  BaseTest:41 - Response Headers: Date=Tue, 04 Feb 2025 18:27:21 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:57:20 INFO  BaseTest:42 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:57:20 INFO  BaseTest:47 - test get user name started
+2025-02-04 23:57:21 INFO  BaseTest:50 - Response Body: {"id":1904288897,"username":"pinkie.mcclure","firstName":"Vincenzo","lastName":"Cruickshank","email":"georgeann.gusikowski@example.com","password":"96iw1f27u","phone":"280-240-5778","userStatus":1904288897}
+2025-02-04 23:57:21 INFO  BaseTest:51 - Response Headers: Date=Tue, 04 Feb 2025 18:27:22 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:57:21 INFO  BaseTest:52 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:57:21 INFO  BaseTest:57 - test update user name started
+2025-02-04 23:57:23 INFO  BaseTest:61 - Response Body: {"code":200,"type":"unknown","message":"1904288897"}
+2025-02-04 23:57:23 INFO  BaseTest:62 - Response Headers: Date=Tue, 04 Feb 2025 18:27:24 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:57:23 INFO  BaseTest:63 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:57:23 INFO  BaseTest:68 - test user phone updated started
+2025-02-04 23:57:24 INFO  BaseTest:71 - Response Body: {"id":1904288897,"username":"pinkie.mcclure","firstName":"Vincenzo","lastName":"Cruickshank","email":"georgeann.gusikowski@example.com","password":"96iw1f27u","phone":"282.792.7594","userStatus":1904288897}
+2025-02-04 23:57:24 INFO  BaseTest:72 - Response Headers: Date=Tue, 04 Feb 2025 18:27:25 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:57:24 INFO  BaseTest:73 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:57:24 INFO  BaseTest:78 - test delete user started
+2025-02-04 23:57:25 INFO  BaseTest:81 - Response Body: {"code":200,"type":"unknown","message":"pinkie.mcclure"}
+2025-02-04 23:57:25 INFO  BaseTest:82 - Response Headers: Date=Tue, 04 Feb 2025 18:27:26 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:57:25 INFO  BaseTest:83 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:16 INFO  BaseTest:10 - Starting test execution
+2025-02-04 23:58:16 INFO  BaseTest:19 - -----------------------------------
+2025-02-04 23:58:16 INFO  BaseTest:20 - starting the automation suite
+2025-02-04 23:58:16 INFO  BaseTest:22 - User Payload initialization has been started
+2025-02-04 23:58:16 INFO  BaseTest:32 - User Payload initialization is completed
+2025-02-04 23:58:16 INFO  BaseTest:37 - test create user name started
+2025-02-04 23:58:16 INFO  BaseTest:38 - username used for creating user is pasquale.berge
+2025-02-04 23:58:19 INFO  BaseTest:40 - Response Body: {"code":200,"type":"unknown","message":"1265508963"}
+2025-02-04 23:58:19 INFO  BaseTest:41 - Response Headers: Date=Tue, 04 Feb 2025 18:28:20 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:19 INFO  BaseTest:42 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:19 INFO  BaseTest:47 - test get user name started
+2025-02-04 23:58:20 INFO  BaseTest:50 - Response Body: {"id":1265508963,"username":"pasquale.berge","firstName":"Delila","lastName":"Bins","email":"page.heidenreich@example.com","password":"9ncgbz","phone":"(613) 717-8008","userStatus":1265508963}
+2025-02-04 23:58:20 INFO  BaseTest:51 - Response Headers: Date=Tue, 04 Feb 2025 18:28:21 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:20 INFO  BaseTest:52 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:20 INFO  BaseTest:57 - test update user name started
+2025-02-04 23:58:21 INFO  BaseTest:61 - Response Body: {"code":200,"type":"unknown","message":"1265508963"}
+2025-02-04 23:58:21 INFO  BaseTest:62 - Response Headers: Date=Tue, 04 Feb 2025 18:28:22 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:21 INFO  BaseTest:63 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:21 INFO  BaseTest:68 - test user phone updated started
+2025-02-04 23:58:23 INFO  BaseTest:71 - Response Body: {"id":1265508963,"username":"pasquale.berge","firstName":"Delila","lastName":"Bins","email":"page.heidenreich@example.com","password":"9ncgbz","phone":"194.247.4428","userStatus":1265508963}
+2025-02-04 23:58:23 INFO  BaseTest:72 - Response Headers: Date=Tue, 04 Feb 2025 18:28:24 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:23 INFO  BaseTest:73 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:23 INFO  BaseTest:78 - test delete user started
+2025-02-04 23:58:24 INFO  BaseTest:81 - Response Body: {"code":200,"type":"unknown","message":"pasquale.berge"}
+2025-02-04 23:58:24 INFO  BaseTest:82 - Response Headers: Date=Tue, 04 Feb 2025 18:28:25 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:24 INFO  BaseTest:83 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:58:24 INFO  BaseTest:99 - test delete user started
+2025-02-04 23:58:25 INFO  BaseTest:102 - Response Body: 
+2025-02-04 23:58:25 INFO  BaseTest:103 - Response Headers: Date=Tue, 04 Feb 2025 18:28:26 GMT
+Content-Length=0
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:58:25 INFO  BaseTest:104 - Response Status: HTTP/1.1 404 Not Found
+2025-02-04 23:59:00 INFO  BaseTest:10 - Starting test execution
+2025-02-04 23:59:00 INFO  BaseTest:19 - -----------------------------------
+2025-02-04 23:59:00 INFO  BaseTest:20 - starting the automation suite
+2025-02-04 23:59:00 INFO  BaseTest:22 - User Payload initialization has been started
+2025-02-04 23:59:00 INFO  BaseTest:32 - User Payload initialization is completed
+2025-02-04 23:59:00 INFO  BaseTest:37 - test create user name started
+2025-02-04 23:59:00 INFO  BaseTest:38 - username used for creating user is soledad.schmeler
+2025-02-04 23:59:03 INFO  BaseTest:40 - Response Body: {"code":200,"type":"unknown","message":"1866229258"}
+2025-02-04 23:59:03 INFO  BaseTest:41 - Response Headers: Date=Tue, 04 Feb 2025 18:29:04 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:03 INFO  BaseTest:42 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:03 INFO  BaseTest:47 - test get user name started
+2025-02-04 23:59:04 INFO  BaseTest:50 - Response Body: {"id":1866229258,"username":"soledad.schmeler","firstName":"Loris","lastName":"Mosciski","email":"vonda.leuschke@example.com","password":"uj5sigj","phone":"287-459-5939","userStatus":1866229258}
+2025-02-04 23:59:04 INFO  BaseTest:51 - Response Headers: Date=Tue, 04 Feb 2025 18:29:05 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:04 INFO  BaseTest:52 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:04 INFO  BaseTest:57 - test update user name started
+2025-02-04 23:59:05 INFO  BaseTest:61 - Response Body: {"code":200,"type":"unknown","message":"1866229258"}
+2025-02-04 23:59:05 INFO  BaseTest:62 - Response Headers: Date=Tue, 04 Feb 2025 18:29:06 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:05 INFO  BaseTest:63 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:05 INFO  BaseTest:68 - test user phone updated started
+2025-02-04 23:59:06 INFO  BaseTest:71 - Response Body: {"id":1866229258,"username":"soledad.schmeler","firstName":"Loris","lastName":"Mosciski","email":"vonda.leuschke@example.com","password":"uj5sigj","phone":"546.078.0228","userStatus":1866229258}
+2025-02-04 23:59:06 INFO  BaseTest:72 - Response Headers: Date=Tue, 04 Feb 2025 18:29:07 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:06 INFO  BaseTest:73 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:06 INFO  BaseTest:78 - test delete user started
+2025-02-04 23:59:08 INFO  BaseTest:81 - Response Body: {"code":200,"type":"unknown","message":"soledad.schmeler"}
+2025-02-04 23:59:08 INFO  BaseTest:82 - Response Headers: Date=Tue, 04 Feb 2025 18:29:09 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:08 INFO  BaseTest:83 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:08 INFO  BaseTest:89 - test create user with array started
+2025-02-04 23:59:09 INFO  BaseTest:92 - Response Body: {"code":200,"type":"unknown","message":"ok"}
+2025-02-04 23:59:09 INFO  BaseTest:93 - Response Headers: Date=Tue, 04 Feb 2025 18:29:10 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:09 INFO  BaseTest:94 - Response Status: HTTP/1.1 200 OK
+2025-02-04 23:59:09 INFO  BaseTest:99 - test delete user started
+2025-02-04 23:59:10 INFO  BaseTest:102 - Response Body: {"code":200,"type":"unknown","message":"soledad.schmeler"}
+2025-02-04 23:59:10 INFO  BaseTest:103 - Response Headers: Date=Tue, 04 Feb 2025 18:29:11 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-04 23:59:10 INFO  BaseTest:104 - Response Status: HTTP/1.1 200 OK

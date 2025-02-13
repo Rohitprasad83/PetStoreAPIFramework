@@ -2,18 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="utilities.ExtentTestListener"/>
+        <listener class-name="api.utilities.ExtentTestListener"/>
     </listeners>
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/pdroh/Documents/Java Intellij/PetStoreAPIFramework">-->
+<!--        <classes>-->
+<!--            <class name="api.test.UserTests">-->
+<!--                <methods>-->
+<!--                    <include name="testLoginUser" />-->
+<!--                    <include name="testLogoutUser" />-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
     <test verbose="2" preserve-order="true" name="C:/Users/pdroh/Documents/Java Intellij/PetStoreAPIFramework">
         <classes>
-            <class name="api.test.UserTests">
-                <methods>
-                    <include name="testCreateUser"/>
-                    <include name="testGetUser"/>
-                    <include name="testUpdateUser"/>
-                    <include name="testUserPhoneUpdated"/>
-                    <include name="testDeleteUser"/>
-                </methods>
+            <class name="api.test.PetTests">
+
             </class>
         </classes>
     </test>

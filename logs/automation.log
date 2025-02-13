@@ -1,71 +1,10 @@
-2025-01-27 22:18:44 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:18:44 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:18:44 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:18:44 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:18:44 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:18:44 INFO  BaseTest:35 - username used for creating user is shayne.nicolas
-2025-01-27 22:18:48 INFO  BaseTest:37 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@174e1b99
-2025-01-27 22:18:48 INFO  BaseTest:42 - test get user name started
-2025-01-27 22:18:49 INFO  BaseTest:44 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@3cf06a01
-2025-01-27 22:18:49 INFO  BaseTest:49 - test update user name started
-2025-01-27 22:18:51 INFO  BaseTest:52 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@2a984952
-2025-01-27 22:18:51 INFO  BaseTest:57 - test user phone updated started
-2025-01-27 22:18:52 INFO  BaseTest:59 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@16d4024e
-2025-01-27 22:18:52 INFO  BaseTest:64 - test delete user started
-2025-01-27 22:18:54 INFO  BaseTest:66 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@34070bd2
-2025-01-27 22:19:49 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:19:49 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:19:49 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:19:49 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:19:49 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:19:49 INFO  BaseTest:35 - username used for creating user is roselia.bogisich
-2025-01-27 22:19:53 INFO  BaseTest:37 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@a7bbdbc
-2025-01-27 22:19:53 INFO  BaseTest:42 - test get user name started
-2025-01-27 22:19:55 INFO  BaseTest:44 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@54a6ef6
-2025-01-27 22:19:55 INFO  BaseTest:49 - test update user name started
-2025-01-27 22:19:56 INFO  BaseTest:52 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@6408be5
-2025-01-27 22:19:56 INFO  BaseTest:57 - test user phone updated started
-2025-01-27 22:19:58 INFO  BaseTest:59 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@7ef4aceb
-2025-01-27 22:19:58 INFO  BaseTest:64 - test delete user started
-2025-01-27 22:19:59 INFO  BaseTest:66 - 
-Response Details:
-io.restassured.internal.ValidatableResponseImpl@4a41caed
-2025-01-27 22:20:34 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:20:34 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:20:34 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:20:35 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:20:35 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:20:35 INFO  BaseTest:35 - username used for creating user is earline.quigley
-2025-01-27 22:20:38 INFO  BaseTest:42 - test get user name started
-2025-01-27 22:20:39 INFO  BaseTest:48 - test update user name started
-2025-01-27 22:20:41 INFO  BaseTest:55 - test user phone updated started
-2025-01-27 22:20:42 INFO  BaseTest:61 - test delete user started
-2025-01-27 22:23:37 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:23:37 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:23:37 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:23:37 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:23:37 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:23:37 INFO  BaseTest:35 - username used for creating user is stephanie.casper
-2025-01-27 22:23:40 INFO  BaseTest:37 - Response Body: {"code":200,"type":"unknown","message":"1677207406"}
-2025-01-27 22:23:40 INFO  BaseTest:38 - Response Headers: Date=Mon, 27 Jan 2025 16:53:41 GMT
+2025-02-13 00:26:44 INFO  BaseTest:45 - test post create pet method started
+2025-02-13 00:29:40 INFO  BaseTest:45 - test post create pet method started
+2025-02-13 00:30:31 INFO  BaseTest:12 - Starting test execution
+2025-02-13 00:30:31 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 00:30:34 INFO  BaseTest:13 - Response Body: {"id":4,"category":{"id":8,"name":"Irish Terrier"},"name":"Penny","photoUrls":["Quidem quaerat dolor occaecati et error excepturi magni."],"tags":[],"status":"available"}
+2025-02-13 00:30:34 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:30:34 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:00:34 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -73,10 +12,11 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:23:40 INFO  BaseTest:39 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:23:40 INFO  BaseTest:44 - test get user name started
-2025-01-27 22:23:42 INFO  BaseTest:46 - Response Body: {"id":1677207406,"username":"stephanie.casper","firstName":"Newton","lastName":"Beier","email":"micki.waters@example.com","password":"s7w9tbtsp","phone":"795-164-1940","userStatus":1677207406}
-2025-01-27 22:23:42 INFO  BaseTest:47 - Response Headers: Date=Mon, 27 Jan 2025 16:53:42 GMT
+2025-02-13 00:36:06 INFO  BaseTest:12 - Starting test execution
+2025-02-13 00:36:06 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 00:36:10 INFO  BaseTest:13 - Response Body: {"id":5,"category":{"id":9,"name":"Dingo"},"name":"Bear","photoUrls":["Qui perferendis dolores vero possimus voluptas."],"tags":[],"status":"available"}
+2025-02-13 00:36:10 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:36:10 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:06:10 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -84,10 +24,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:23:42 INFO  BaseTest:48 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:23:42 INFO  BaseTest:53 - test update user name started
-2025-01-27 22:23:43 INFO  BaseTest:56 - Response Body: {"code":200,"type":"unknown","message":"1677207406"}
-2025-01-27 22:23:43 INFO  BaseTest:57 - Response Headers: Date=Mon, 27 Jan 2025 16:53:44 GMT
+2025-02-13 00:36:10 INFO  BaseTest:59 - test delete pet method started
+2025-02-13 00:36:15 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"5"}
+2025-02-13 00:36:15 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:36:15 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:06:14 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -95,10 +35,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:23:43 INFO  BaseTest:58 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:23:43 INFO  BaseTest:63 - test user phone updated started
-2025-01-27 22:23:45 INFO  BaseTest:65 - Response Body: {"id":1677207406,"username":"stephanie.casper","firstName":"Newton","lastName":"Beier","email":"micki.waters@example.com","password":"s7w9tbtsp","phone":"(330) 634-7319","userStatus":1677207406}
-2025-01-27 22:23:45 INFO  BaseTest:66 - Response Headers: Date=Mon, 27 Jan 2025 16:53:45 GMT
+2025-02-13 00:36:15 INFO  BaseTest:52 - test get pet method started
+2025-02-13 00:36:16 INFO  BaseTest:13 - Response Body: {"code":1,"type":"error","message":"Pet not found"}
+2025-02-13 00:36:16 INFO  BaseTest:19 - Response Status: HTTP/1.1 404 Not Found
+2025-02-13 00:36:16 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:06:16 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -106,10 +46,11 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:23:45 INFO  BaseTest:67 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:23:45 INFO  BaseTest:72 - test delete user started
-2025-01-27 22:23:46 INFO  BaseTest:74 - Response Body: {"code":200,"type":"unknown","message":"stephanie.casper"}
-2025-01-27 22:23:46 INFO  BaseTest:75 - Response Headers: Date=Mon, 27 Jan 2025 16:53:47 GMT
+2025-02-13 00:36:43 INFO  BaseTest:12 - Starting test execution
+2025-02-13 00:36:43 INFO  BaseTest:52 - test get pet method started
+2025-02-13 00:36:51 INFO  BaseTest:13 - Response Body: {"id":4,"category":{"id":8,"name":"Irish Terrier"},"name":"Penny","photoUrls":["Quidem quaerat dolor occaecati et error excepturi magni."],"tags":[],"status":"available"}
+2025-02-13 00:36:51 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:36:51 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:06:51 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -117,15 +58,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:23:46 INFO  BaseTest:76 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:25:27 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:25:27 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:25:27 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:25:28 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:25:28 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:25:28 INFO  BaseTest:35 - username used for creating user is wade.willms
-2025-01-27 22:25:31 INFO  BaseTest:37 - Response Body: {"code":200,"type":"unknown","message":"1677207406"}
-2025-01-27 22:25:31 INFO  BaseTest:38 - Response Headers: Date=Mon, 27 Jan 2025 16:55:31 GMT
+2025-02-13 00:36:51 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 00:36:53 INFO  BaseTest:13 - Response Body: {"id":4,"category":{"id":6,"name":"Patterdale Terrier"},"name":"Bailey","photoUrls":["Dolores vel rerum a."],"tags":[],"status":"available"}
+2025-02-13 00:36:53 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:36:53 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:06:53 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -133,10 +69,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:25:31 INFO  BaseTest:39 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:25:31 INFO  BaseTest:44 - test get user name started
-2025-01-27 22:25:32 INFO  BaseTest:46 - Response Body: {"id":1677207406,"username":"wade.willms","firstName":"Ted","lastName":"Kassulke","email":"divina.bernhard@example.com","password":"frt6mh264","phone":"(407) 422-6234","userStatus":1677207406}
-2025-01-27 22:25:32 INFO  BaseTest:47 - Response Headers: Date=Mon, 27 Jan 2025 16:55:33 GMT
+2025-02-13 00:36:53 INFO  BaseTest:59 - test delete pet method started
+2025-02-13 00:37:00 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"4"}
+2025-02-13 00:37:00 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:00 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:01 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -144,10 +80,11 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:25:32 INFO  BaseTest:48 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:25:32 INFO  BaseTest:53 - test update user name started
-2025-01-27 22:25:34 INFO  BaseTest:56 - Response Body: {"code":200,"type":"unknown","message":"1677207406"}
-2025-01-27 22:25:34 INFO  BaseTest:57 - Response Headers: Date=Mon, 27 Jan 2025 16:55:34 GMT
+2025-02-13 00:37:15 INFO  BaseTest:12 - Starting test execution
+2025-02-13 00:37:16 INFO  BaseTest:52 - test get pet method started
+2025-02-13 00:37:18 INFO  BaseTest:13 - Response Body: {"id":8,"category":{"id":8,"name":"Dachshund"},"name":"Annie","photoUrls":["Magnam quasi officia soluta."],"tags":[],"status":"available"}
+2025-02-13 00:37:18 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:18 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:18 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -155,10 +92,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:25:34 INFO  BaseTest:58 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:25:34 INFO  BaseTest:63 - test user phone updated started
-2025-01-27 22:25:35 INFO  BaseTest:65 - Response Body: {"id":1677207406,"username":"wade.willms","firstName":"Ted","lastName":"Kassulke","email":"divina.bernhard@example.com","password":"frt6mh264","phone":"197-220-2152","userStatus":1677207406}
-2025-01-27 22:25:35 INFO  BaseTest:66 - Response Headers: Date=Mon, 27 Jan 2025 16:55:35 GMT
+2025-02-13 00:37:18 INFO  BaseTest:59 - test delete pet method started
+2025-02-13 00:37:20 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"8"}
+2025-02-13 00:37:20 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:20 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:20 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -166,10 +103,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:25:35 INFO  BaseTest:67 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:25:35 INFO  BaseTest:72 - test delete user started
-2025-01-27 22:25:36 INFO  BaseTest:74 - Response Body: {"code":200,"type":"unknown","message":"wade.willms"}
-2025-01-27 22:25:36 INFO  BaseTest:75 - Response Headers: Date=Mon, 27 Jan 2025 16:55:37 GMT
+2025-02-13 00:37:20 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 00:37:27 INFO  BaseTest:13 - Response Body: {"id":8,"category":{"id":6,"name":"German Pointer"},"name":"Lady","photoUrls":["Culpa aliquam totam laboriosam aut."],"tags":[],"status":"available"}
+2025-02-13 00:37:27 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:27 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:27 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -177,15 +114,11 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:25:36 INFO  BaseTest:76 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:33:00 INFO  BaseTest:16 - -----------------------------------
-2025-01-27 22:33:00 INFO  BaseTest:17 - starting the automation suite
-2025-01-27 22:33:00 INFO  BaseTest:19 - User Payload initialization has been started
-2025-01-27 22:33:00 INFO  BaseTest:29 - User Payload initialization is completed
-2025-01-27 22:33:00 INFO  BaseTest:34 - test create user name started
-2025-01-27 22:33:00 INFO  BaseTest:35 - username used for creating user is mallory.langosh
-2025-01-27 22:33:04 INFO  BaseTest:37 - Response Body: {"code":200,"type":"unknown","message":"1808432653"}
-2025-01-27 22:33:04 INFO  BaseTest:38 - Response Headers: Date=Mon, 27 Jan 2025 17:03:04 GMT
+2025-02-13 00:37:46 INFO  BaseTest:12 - Starting test execution
+2025-02-13 00:37:46 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 00:37:53 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":3,"name":"Lhasa"},"name":"Missy","photoUrls":["Explicabo placeat expedita repellat possimus."],"tags":[],"status":"available"}
+2025-02-13 00:37:53 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:53 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:53 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -193,10 +126,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:33:04 INFO  BaseTest:39 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:33:04 INFO  BaseTest:44 - test get user name started
-2025-01-27 22:33:05 INFO  BaseTest:46 - Response Body: {"id":1808432653,"username":"mallory.langosh","firstName":"Basil","lastName":"Kreiger","email":"bev.brown@example.com","password":"4o2uni2","phone":"1-256-848-4506","userStatus":1808432653}
-2025-01-27 22:33:05 INFO  BaseTest:47 - Response Headers: Date=Mon, 27 Jan 2025 17:03:05 GMT
+2025-02-13 00:37:53 INFO  BaseTest:52 - test get pet method started
+2025-02-13 00:37:56 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":3,"name":"Lhasa"},"name":"Missy","photoUrls":["Explicabo placeat expedita repellat possimus."],"tags":[],"status":"available"}
+2025-02-13 00:37:56 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:56 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:56 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -204,10 +137,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:33:05 INFO  BaseTest:48 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:33:05 INFO  BaseTest:53 - test update user name started
-2025-01-27 22:33:06 INFO  BaseTest:56 - Response Body: {"code":200,"type":"unknown","message":"1808432653"}
-2025-01-27 22:33:06 INFO  BaseTest:57 - Response Headers: Date=Mon, 27 Jan 2025 17:03:07 GMT
+2025-02-13 00:37:56 INFO  BaseTest:59 - test delete pet method started
+2025-02-13 00:37:58 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"9"}
+2025-02-13 00:37:58 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 00:37:58 INFO  BaseTest:16 - Response Headers: Date=Wed, 12 Feb 2025 19:07:58 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -215,10 +148,11 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:33:06 INFO  BaseTest:58 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:33:06 INFO  BaseTest:63 - test user phone updated started
-2025-01-27 22:33:08 INFO  BaseTest:65 - Response Body: {"id":1808432653,"username":"mallory.langosh","firstName":"Basil","lastName":"Kreiger","email":"bev.brown@example.com","password":"4o2uni2","phone":"(568) 098-9563","userStatus":1808432653}
-2025-01-27 22:33:08 INFO  BaseTest:66 - Response Headers: Date=Mon, 27 Jan 2025 17:03:08 GMT
+2025-02-13 13:16:42 INFO  BaseTest:12 - Starting test execution
+2025-02-13 13:16:42 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 13:16:46 INFO  BaseTest:13 - Response Body: {"id":2,"category":{"id":8,"name":"Shiba"},"name":"Annie","photoUrls":["Provident enim voluptas rerum velit iusto."],"tags":[],"status":"available"}
+2025-02-13 13:16:46 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:16:46 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:46:46 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -226,10 +160,10 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:33:08 INFO  BaseTest:67 - Response Status: HTTP/1.1 200 OK
-2025-01-27 22:33:08 INFO  BaseTest:72 - test delete user started
-2025-01-27 22:33:09 INFO  BaseTest:74 - Response Body: {"code":200,"type":"unknown","message":"mallory.langosh"}
-2025-01-27 22:33:09 INFO  BaseTest:75 - Response Headers: Date=Mon, 27 Jan 2025 17:03:10 GMT
+2025-02-13 13:16:46 INFO  BaseTest:52 - test get pet method started
+2025-02-13 13:16:48 INFO  BaseTest:13 - Response Body: {"id":2,"category":{"id":8,"name":"Shiba"},"name":"Annie","photoUrls":["Provident enim voluptas rerum velit iusto."],"tags":[],"status":"available"}
+2025-02-13 13:16:48 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:16:48 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:46:48 GMT
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
@@ -237,4 +171,287 @@ Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, POST, DELETE, PUT
 Access-Control-Allow-Headers=Content-Type, api_key, Authorization
 Server=Jetty(9.2.9.v20150224)
-2025-01-27 22:33:09 INFO  BaseTest:76 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:16:48 INFO  BaseTest:60 - test update pet method started
+2025-02-13 13:16:49 INFO  BaseTest:13 - Response Body: {"code":405,"type":"unknown","message":"no data"}
+2025-02-13 13:16:49 INFO  BaseTest:19 - Response Status: HTTP/1.1 405 Method Not Allowed
+2025-02-13 13:16:49 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:46:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:16:49 INFO  BaseTest:64 - HTTP/1.1 405 Method Not Allowed
+2025-02-13 13:16:49 INFO  BaseTest:70 - test delete pet method started
+2025-02-13 13:16:51 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"2"}
+2025-02-13 13:16:51 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:16:51 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:46:51 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:19:30 INFO  BaseTest:12 - Starting test execution
+2025-02-13 13:19:30 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 13:19:34 INFO  BaseTest:13 - Response Body: {"id":6,"category":{"id":6,"name":"Kuvasz"},"name":"Sassy","photoUrls":["Deleniti dicta assumenda nostrum."],"tags":[],"status":"available"}
+2025-02-13 13:19:34 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:19:34 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:49:34 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:19:34 INFO  BaseTest:52 - test get pet method started
+2025-02-13 13:19:36 INFO  BaseTest:13 - Response Body: {"id":6,"category":{"id":6,"name":"Kuvasz"},"name":"Sassy","photoUrls":["Deleniti dicta assumenda nostrum."],"tags":[],"status":"available"}
+2025-02-13 13:19:36 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:19:36 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:49:36 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:19:36 INFO  BaseTest:60 - test update pet method started
+2025-02-13 13:19:37 INFO  BaseTest:13 - Response Body: {"code":405,"type":"unknown","message":"no data"}
+2025-02-13 13:19:37 INFO  BaseTest:19 - Response Status: HTTP/1.1 405 Method Not Allowed
+2025-02-13 13:19:37 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:49:37 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:19:37 INFO  BaseTest:64 - HTTP/1.1 405 Method Not Allowed
+2025-02-13 13:19:37 INFO  BaseTest:70 - test delete pet method started
+2025-02-13 13:19:38 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"6"}
+2025-02-13 13:19:38 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:19:38 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:49:38 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:28:20 INFO  BaseTest:12 - Starting test execution
+2025-02-13 13:28:21 INFO  BaseTest:43 - test post create pet method started
+2025-02-13 13:28:26 INFO  BaseTest:13 - Response Body: {"id":6,"category":{"id":9,"name":"Saluki"},"name":"Precious","photoUrls":["Enim provident vitae doloribus veritatis est velit voluptatem."],"tags":[],"status":"available"}
+2025-02-13 13:28:26 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:28:26 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:58:26 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:28:26 INFO  BaseTest:52 - test get pet method started
+2025-02-13 13:28:27 INFO  BaseTest:13 - Response Body: {"id":6,"category":{"id":9,"name":"Saluki"},"name":"Precious","photoUrls":["Enim provident vitae doloribus veritatis est velit voluptatem."],"tags":[],"status":"available"}
+2025-02-13 13:28:27 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:28:27 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:58:27 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:28:27 INFO  BaseTest:60 - test update pet method started
+2025-02-13 13:28:29 INFO  BaseTest:13 - Response Body: {"id":6,"category":{"id":9,"name":"Saluki"},"name":"Precious","photoUrls":["Enim provident vitae doloribus veritatis est velit voluptatem."],"tags":[],"status":"pending"}
+2025-02-13 13:28:29 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:28:29 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:58:29 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 13:28:29 INFO  BaseTest:64 - HTTP/1.1 200 OK
+2025-02-13 13:28:29 INFO  BaseTest:70 - test delete pet method started
+2025-02-13 13:28:30 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"6"}
+2025-02-13 13:28:30 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 13:28:30 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 07:58:30 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:49:46 INFO  BaseTest:12 - Starting test execution
+2025-02-13 14:49:47 INFO  BaseTest:44 - test post create pet method started
+2025-02-13 14:49:49 INFO  BaseTest:13 - Response Body: {"id":7,"category":{"id":4,"name":"Yorkshire Terrier"},"name":"Tank","photoUrls":["Sunt rerum culpa ad est quia ducimus expedita."],"tags":[],"status":"available"}
+2025-02-13 14:49:49 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:49:49 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:19:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:49:49 INFO  BaseTest:53 - test get pet method started
+2025-02-13 14:49:50 INFO  BaseTest:13 - Response Body: {"id":7,"category":{"id":4,"name":"Yorkshire Terrier"},"name":"Tank","photoUrls":["Sunt rerum culpa ad est quia ducimus expedita."],"tags":[],"status":"available"}
+2025-02-13 14:49:50 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:49:50 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:19:51 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:49:50 INFO  BaseTest:61 - test update pet method started
+2025-02-13 14:49:52 INFO  BaseTest:13 - Response Body: {"id":7,"category":{"id":4,"name":"Yorkshire Terrier"},"name":"Tank","photoUrls":["Sunt rerum culpa ad est quia ducimus expedita."],"tags":[],"status":"pending"}
+2025-02-13 14:49:52 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:49:52 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:19:52 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:49:52 INFO  BaseTest:70 - test upload image to pet method started
+2025-02-13 14:49:52 INFO  BaseTest:78 - test delete pet method started
+2025-02-13 14:49:53 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"7"}
+2025-02-13 14:49:53 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:49:53 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:19:53 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:50:15 INFO  BaseTest:12 - Starting test execution
+2025-02-13 14:50:15 INFO  BaseTest:44 - test post create pet method started
+2025-02-13 14:50:17 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":9,"name":"Basset Hound"},"name":"Zoe","photoUrls":["Similique alias dolorem aut doloribus laudantium."],"tags":[],"status":"available"}
+2025-02-13 14:50:17 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:50:17 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:20:17 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:50:17 INFO  BaseTest:53 - test get pet method started
+2025-02-13 14:50:19 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":9,"name":"Basset Hound"},"name":"Zoe","photoUrls":["Similique alias dolorem aut doloribus laudantium."],"tags":[],"status":"available"}
+2025-02-13 14:50:19 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:50:19 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:20:19 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:50:19 INFO  BaseTest:61 - test update pet method started
+2025-02-13 14:50:20 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":9,"name":"Basset Hound"},"name":"Zoe","photoUrls":["Similique alias dolorem aut doloribus laudantium."],"tags":[],"status":"pending"}
+2025-02-13 14:50:20 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:50:20 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:20:20 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:50:20 INFO  BaseTest:70 - test upload image to pet method started
+2025-02-13 14:50:22 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"additionalMetadata: dog\nFile uploaded to ./GXFG84ybEAEfak-.jpg, 229672 bytes"}
+2025-02-13 14:50:22 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:50:22 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:20:23 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:50:22 INFO  BaseTest:78 - test delete pet method started
+2025-02-13 14:50:24 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"9"}
+2025-02-13 14:50:24 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:50:24 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:20:24 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:35 INFO  BaseTest:12 - Starting test execution
+2025-02-13 14:53:35 INFO  BaseTest:44 - test post create pet method started
+2025-02-13 14:53:38 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":7,"name":"English Setter"},"name":"Roxy","photoUrls":["Aperiam voluptates fugiat."],"tags":[],"status":"available"}
+2025-02-13 14:53:38 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:38 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:38 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:38 INFO  BaseTest:53 - test get pet method started
+2025-02-13 14:53:39 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":7,"name":"English Setter"},"name":"Roxy","photoUrls":["Aperiam voluptates fugiat."],"tags":[],"status":"available"}
+2025-02-13 14:53:39 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:39 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:39 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:39 INFO  BaseTest:61 - test update pet method started
+2025-02-13 14:53:40 INFO  BaseTest:13 - Response Body: {"id":9,"category":{"id":7,"name":"English Setter"},"name":"Roxy","photoUrls":["Aperiam voluptates fugiat."],"tags":[],"status":"pending"}
+2025-02-13 14:53:40 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:40 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:40 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:40 INFO  BaseTest:70 - test upload image to pet method started
+2025-02-13 14:53:43 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"additionalMetadata: dog\nFile uploaded to ./GXFG84ybEAEfak-.jpg, 229672 bytes"}
+2025-02-13 14:53:43 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:43 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:43 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:43 INFO  BaseTest:78 - test delete pet method started
+2025-02-13 14:53:44 INFO  BaseTest:13 - Response Body: {"code":200,"type":"unknown","message":"9"}
+2025-02-13 14:53:44 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:44 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:45 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+2025-02-13 14:53:44 INFO  BaseTest:86 - test get pet by status method started
+2025-02-13 14:53:46 INFO  BaseTest:13 - Response Body: [{"id":9223372016900030873,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030874,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900030885,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030898,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030903,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030904,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030905,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030915,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030924,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":922337203685477577,"category":{"id":2,"name":"frog"},"name":"pupa","photoUrls":[],"tags":[],"status":"available"},{"id":9223372016900030933,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030956,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030957,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030958,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030959,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030960,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":4,"category":{"id":4,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":4,"name":"string"}],"status":"available"},{"id":9223372016900030968,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030969,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030970,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030971,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030981,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030982,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030983,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030990,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030991,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030996,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030997,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031009,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031010,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031011,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031012,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031015,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031020,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031044,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031045,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031046,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031047,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031063,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031064,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031067,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031070,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031071,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031076,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031077,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031078,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031079,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031082,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031087,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031088,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031089,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031090,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031091,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031097,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900030000,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031110,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031112,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031117,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031118,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031119,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031120,"category":{"id":0,"name":"Jerry"},"name":"Mouse","photoUrls":["string"],"tags":[{"id":0,"name":"Mouse"}],"status":"available"},{"id":9223372016900031121,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031126,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031134,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031137,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031178,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031179,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031180,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031184,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":9223372016900031185,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031186,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031187,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031188,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031191,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031192,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031193,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031194,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031197,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031204,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":9223372016900031207,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031211,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031212,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031213,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180179,"category":{"id":0,"name":"string"},"name":"test","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031236,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031238,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031247,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031249,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031261,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031262,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031263,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031264,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031269,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031270,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031271,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031272,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031273,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031274,"category":{"id":0,"name":"string"},"name":"MAX","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":222,"name":"tex","photoUrls":[],"tags":[{"id":21,"name":"tex"}],"status":"available"},{"id":9223372016900031275,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031276,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031277,"category":{"id":0,"name":"string"},"name":"LEO","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031278,"category":{"id":0,"name":"string"},"name":"MAX","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031281,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031308,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031313,"name":"tuffy","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031338,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031349,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031350,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031356,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031358,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031359,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031360,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9223372016900031362,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031363,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031364,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031365,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":112233,"category":{"id":30,"name":"Eq-dog"},"name":"Postman","photoUrls":["URLLink"],"tags":[{"id":10,"name":"Doberman"}],"status":"available"},{"id":9223372016900031370,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031371,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031374,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031375,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031376,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031395,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031396,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031401,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031402,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031403,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":55,"category":{"id":0,"name":"string"},"name":"runneradmin","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031404,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031407,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":262626262626262,"category":{"id":2,"name":"dog"},"name":"doggie-mgzmga","photoUrls":[],"tags":[],"status":"available"},{"id":101,"category":{"id":101,"name":"categoryname_001"},"name":"jimmy","photoUrls":["https://www.bing.com/images/search?view=detailV2&ccid=VJye7aGY&id=6C0D10256243B141C8DA56236025D46559D5B62D&thid=OIP.VJye7aGYtqcFaoTuskNS9AHaE6&mediaurl=https%3A%2F%2Fc0.wallpaperflare.com%2Fpreview%2F344%2F599%2F609%2Fpet-dog-animals-cute.jpg&exph=604&expw=910&q=dog&simid=607986564911883125&FORM=IRPRST&ck=FF08505B01CA2DE208CD4C7A27B4692F&selectedIndex=1&itb=0&cw=1222&ch=585&ajaxhist=0&ajaxserp=0"],"tags":[{"id":101,"name":"jimmy"}],"status":"available"},{"id":9223372016900031419,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031445,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031446,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031447,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031451,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031456,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031457,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031458,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031461,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031464,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031469,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031470,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031471,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":770,"category":{"id":1,"name":"Dogs"},"name":"Buddy","photoUrls":["https://example.com/photo1.jpg"],"tags":[{"id":1,"name":"Friendly"}],"status":"available"},{"id":9223372016900031472,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031473,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031474,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031475,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031476,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031477,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031478,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031479,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031480,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031481,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031482,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031483,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031486,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031489,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031490,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031491,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031492,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":12345,"category":{"id":1,"name":"Dog"},"name":"Buddy","photoUrls":["https://example.com/photo1.jpg"],"tags":[{"id":1,"name":"friendly"}],"status":"available"},{"id":9223372016900031493,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031494,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031496,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031497,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031498,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031507,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031508,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031509,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031510,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031516,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031517,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031527,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031528,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031529,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031530,"category":{"id":100,"name":"Dinosaur"},"name":"Tyrannosaurus","photoUrls":["http://en.wikipedia.org/wiki/Tyrannosaurus#/media/File:Tyrannosaurus_rex_mmartyniuk.png"],"tags":[{"id":100,"name":"reptile"},{"id":101,"name":"dinosaur"}],"status":"available"},{"id":9223372016900031531,"category":{"id":0,"name":"Roger"},"name":"Dinosaur","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031533,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031535,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031536,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031537,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031542,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":2,"name":"Whiskers","photoUrls":["http://example.com/photo2"],"tags":[],"status":"available"},{"id":3368546,"category":{"id":-8466310,"name":"qui reprehenderit est occaecat magna"},"name":"doggie","photoUrls":["nulla sunt cupidatat non","cupidatat Duis ad ven"],"tags":[{"id":97143667,"name":"Lorem pariatur anim laborum dolor"},{"id":18225911,"name":"ex et ipsum minim"}],"status":"available"},{"id":9223372016900031543,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031558,"category":{"id":0,"name":"string"},"name":"cat","photoUrls":["https://klike.net/uploads/posts/2023-01/1675061232_3-62.jpg"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031572,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031573,"category":{"id":59148665,"name":"minim nostrud aliquip"},"name":"doggie","photoUrls":["cillum officia eu ad","deserunt ex sed"],"tags":[{"id":55768795,"name":"sint in Lorem"},{"id":86732763,"name":"esse sed ea ex"}],"status":"available"},{"id":50800105,"category":{"id":-3382005,"name":"veniam"},"name":"doggie","photoUrls":["eu cillum","culpa adipisicing proident veniam"],"tags":[{"id":-13038983,"name":"aute do in Excepteur Ut"},{"id":86652366,"name":"ad"}],"status":"available"},{"id":8126,"category":{"id":1,"name":"Dogs"},"name":"Buddy","photoUrls":["https://example.com/dog1.jpg"],"tags":[{"id":100,"name":"Friendly"}],"status":"available"},{"id":9223372016900031575,"category":{"id":0,"name":"string"},"name":"Cat","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"available"},{"id":9223372016900031578,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031579,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031595,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031596,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031597,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042131,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031605,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031606,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031607,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031608,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031611,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031617,"category":{"id":0,"name":"May"},"name":"taksa","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031618,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031619,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031620,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031621,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":111,"category":{"id":111,"name":"dogs"},"name":"Jack","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031656,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031658,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031659,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031660,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":3555555,"category":{"id":0,"name":"May"},"name":"dog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031665,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031667,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031668,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031669,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031671,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031676,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031680,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031682,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031686,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031715,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031721,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031722,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031723,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12,"category":{"id":1,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"available"},{"id":9223372016900031724,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031727,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031730,"category":{"id":0,"name":"string"},"name":"doggie1","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031732,"category":{"id":0,"name":"puppy"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"Charlie"}],"status":"available"},{"id":9223372016900031733,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031734,"name":"siyaan","photoUrls":[],"tags":[],"status":"available"},{"id":9223372016900031735,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031736,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031737,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031738,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031739,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031740,"category":{"id":0,"name":"#%status%#"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031741,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031744,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031749,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031751,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":15615615151,"category":{"id":0,"name":"May"},"name":"taksa","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031752,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031755,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031757,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031761,"category":{"id":0,"name":"string"},"name":"Godzilla","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031762,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":753,"category":{"id":753,"name":"Monkey"},"name":"Jack","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031773,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031785,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031786,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031787,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031788,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031789,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031790,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031791,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031798,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372016900031800,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":123,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":1,"category":{"id":456,"name":"dog"},"name":"Turner","photoUrls":[],"tags":[],"status":"available"},{"id":9223372016900031808,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}]
+2025-02-13 14:53:46 INFO  BaseTest:19 - Response Status: HTTP/1.1 200 OK
+2025-02-13 14:53:46 INFO  BaseTest:16 - Response Headers: Date=Thu, 13 Feb 2025 09:23:46 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)

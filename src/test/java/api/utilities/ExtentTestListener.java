@@ -1,7 +1,6 @@
-package utilities;
+package api.utilities;
 
 import com.aventstack.extentreports.ExtentTest;
-import io.restassured.response.Response;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
