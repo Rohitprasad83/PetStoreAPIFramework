@@ -5,6 +5,7 @@ import org.apache.logging.log4j.*;
 
 public class LogResponse {
     Logger logger;
+    private static ThreadLocal<Response> lastResponse = new ThreadLocal<>();
 
     public LogResponse(Logger logger){
         this.logger = logger;
@@ -22,5 +23,14 @@ public class LogResponse {
         logBody(res);
         logStatus(res);
         logHeaders(res);
+        lastResponse.set(res);
+    }
+
+    public static Response getLastResponse() {
+        return lastResponse.get();
+    }
+
+    public static void clearLastResponse() {
+        lastResponse.remove();
     }
 }

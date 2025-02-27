@@ -18,6 +18,7 @@ import java.util.List;
 public class PetTests extends BaseTest {
     Pet petPayload;
     Faker faker;
+
     @BeforeClass()
     public void initializePetPayload(){
         faker = new Faker();
