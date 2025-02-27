@@ -18,7 +18,7 @@ public class StoreTests extends BaseTest {
         faker = new Faker();
         storePayload = new Store();
         storePayload.setId(faker.number().randomDigitNotZero());
-        storePayload.setId(faker.number().randomDigitNotZero());
+        storePayload.setPetId(faker.number().randomDigitNotZero());
         storePayload.setQuantity(faker.number().randomDigitNotZero());
         storePayload.setShipDate(Instant.now().toString());
         storePayload.setStatus("placed");

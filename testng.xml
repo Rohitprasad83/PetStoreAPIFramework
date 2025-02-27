@@ -7,7 +7,7 @@
 
     <test verbose="2" preserve-order="true" name="C:/Users/pdroh/Documents/Java Intellij/PetStoreAPIFramework">
         <classes>
-            <class name="api.test.TC_103"/>
+            <class name="api.test.TC_105"/>
 <!--            <class name="api.test.TC_102"/>-->
         </classes>
     </test>
