@@ -6,9 +6,32 @@
     </listeners>
 
     <test verbose="2" preserve-order="true" name="C:/Users/pdroh/Documents/Java Intellij/PetStoreAPIFramework">
+        <groups>
+            <run>
+                <exclude name="healthcheck"/>
+            </run>
+        </groups>
         <classes>
+            <class name="api.test.TC_101"/>
+            <class name="api.test.TC_102"/>
+            <class name="api.test.TC_103"/>
+            <class name="api.test.TC_104"/>
             <class name="api.test.TC_105"/>
-<!--            <class name="api.test.TC_102"/>-->
+            <class name="api.test.TC_106"/>
+            <class name="api.test.TC_107"/>
+            <class name="api.test.TC_108"/>
+            <class name="api.test.TC_109"/>
+            <class name="api.test.TC_110"/>
+            <class name="api.test.TC_111"/>
+            <class name="api.test.TC_112"/>
+            <class name="api.test.TC_113"/>
+            <class name="api.test.TC_114"/>
+            <class name="api.test.TC_116"/>
+            <class name="api.test.TC_117"/>
+            <class name="api.test.TC_118"/>
+            <class name="api.test.TC_119"/>
+            <class name="api.test.TC_120"/>
         </classes>
+
     </test>
 </suite>

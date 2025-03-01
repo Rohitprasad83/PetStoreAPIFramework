@@ -89,6 +89,11 @@
       <artifactId>extentreports</artifactId>
       <version>5.1.2</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/com.networknt/json-schema-validator -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>5.3.2</version>
+    </dependency>
   </dependencies>
 </project>
