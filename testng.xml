@@ -26,6 +26,7 @@
             <class name="api.test.TC_112"/>
             <class name="api.test.TC_113"/>
             <class name="api.test.TC_114"/>
+            <class name="api.test.TC_115"/>
             <class name="api.test.TC_116"/>
             <class name="api.test.TC_117"/>
             <class name="api.test.TC_118"/>
