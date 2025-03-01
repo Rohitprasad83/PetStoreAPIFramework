@@ -1,0 +1,3531 @@
+{
+	"info": {
+		"_postman_id": "f687321c-73f3-461c-b00a-2c5612a3ca04",
+		"name": "PET STORE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27269411"
+	},
+	"item": [
+		{
+			"name": "API Requests",
+			"item": [
+				{
+					"name": "Create User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let requestBody = JSON.parse(pm.request.body.raw);\r",
+									"console.log(requestBody);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"set Username to collection variable\", ()=> {\r",
+									"\tif(requestBody.hasOwnProperty(\"username\")){\r",
+									"\t\tpm.collectionVariables.set(\"username\", requestBody.username);\r",
+									"\t}\r",
+									"\telse\r",
+									"\t{\r",
+									"\t\tpm.expect.fail(\"username does not exist\");\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "apikey",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "special-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 0,\r\n\t\"username\": \"{{$randomUserName}}\",\r\n\t\"firstName\": \"{{$randomFirstName}}\",\r\n\t\"lastName\": \"{{$randomLastName}}\",\r\n\t\"email\": \"{{$randomEmail}}\",\r\n\t\"password\": \"{{$randomPassword}}\",\r\n\t\"phone\": \"{{$randomPhoneNumber}}\",\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": {{$randomUUID}},\r\n\t\"username\": {{$randomUserName}},\r\n\t\"firstName\": {{$randomFirstName}},\r\n\t\"lastName\": {{$randomLastName}},\r\n\t\"email\": {{$randomEmail}},\r\n\t\"password\": {{$randomPassword}},\r\n\t\"phone\": {{$randomPhoneNumber}},\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "apikey",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "special-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "Doyle63"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Passed on Array",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n\t{\r\n\t\"id\": 0,\r\n\t\"username\": \"{{$randomUserName}}\",\r\n\t\"firstName\": \"{{$randomFirstName}}\",\r\n\t\"lastName\": \"{{$randomLastName}}\",\r\n\t\"email\": \"{{$randomEmail}}\",\r\n\t\"password\": \"{{$randomPassword}}\",\r\n\t\"phone\": \"{{$randomPhoneNumber}}\",\r\n\t\"userStatus\": 0\r\n\t}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createWithArray"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=HeoMa2CYlY6ov_7",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								},
+								{
+									"key": "password",
+									"value": "HeoMa2CYlY6ov_7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/logout",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phone\": \"{{$randomPhoneNumber}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Inventory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/inventory",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST ORDER",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 1,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ORDER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ORDER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add PET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"dog\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"{{$randomLoremText}}\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"{{$randomFullName}}\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet",
+							"host": [
+								"{{BASE_URL}}pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Image to a PET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/pdroh/Downloads/dog-8198719_1280.jpg"
+								},
+								{
+									"key": "additionalMetadata",
+									"value": "doggie",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId/uploadImage",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId",
+								"uploadImage"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "-100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PET",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet/",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PET BY STATUS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/findByStatus?status=available",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available"
+								},
+								{
+									"key": "status",
+									"value": "sold",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PET",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "841"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TC_101",
+			"item": [
+				{
+					"name": "Add a New Pet to the Store",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Save pet ID as collection variable\", function () {\r",
+									"    let response = pm.response.json();\r",
+									"    if (response.id) {\r",
+									"        pm.collectionVariables.set(\"petId\", response.id);\r",
+									"        console.log(\"Pet ID saved:\", response.id);\r",
+									"    } else {\r",
+									"        pm.test(\"Pet ID was not generated in the response\", function() {\r",
+									"            pm.expect(response.id).to.exist;\r",
+									"        });\r",
+									"    }\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"dog\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"{{$randomLoremText}}\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"{{$randomFullName}}\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet",
+							"host": [
+								"{{BASE_URL}}pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify pet is available",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"id to be the created as petID\", ()=> {\r",
+									"\tlet response = pm.response.json();\r",
+									"\tlet pedID = pm.collectionVariables.get(\"petId\");\r",
+									"\t\r",
+									"\tpm.expect(response.id).eq(pedID)\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "{{petId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place an order for the pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Save order ID as collection variable\", function () {\r",
+									"    let response = pm.response.json();\r",
+									"    if (response.id) {\r",
+									"        pm.collectionVariables.set(\"orderId\", response.id);\r",
+									"        console.log(\"Order ID saved:\", response.id);\r",
+									"    } else {\r",
+									"        pm.test(\"Pet ID was not generated in the response\", function() {\r",
+									"            pm.expect(response.id).to.exist;\r",
+									"        });\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{petId}},\r\n  \"quantity\": {{$randomInt}},\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm order details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mark pet as sold (Simulating fulfillment)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{petId}},\r\n  \"status\": \"sold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet/",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify pet is no longer available for purchase",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"check status is sold\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.hasOwnProperty(\"status\")){\r",
+									"\t\tpm.expect(res.status).to.be.eq(\"sold\")\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"Response do not contain 'status' field\")\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "{{petId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_101 | Customer purchases a pet successfully | Pet is available | Add pet → Verify availability → Place order → Confirm order → Mark pet as sold → Verify pet is unavailable | Pet is purchased, status updates to 'sold', and cannot be bought again |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_102",
+			"item": [
+				{
+					"name": "Login with Invalid Credentials",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", () => {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=invalidPassword",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								},
+								{
+									"key": "password",
+									"value": "invalidPassword"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect in invalid login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=invalidPassword",
+									"host": [
+										"{{BASE_URL}}user"
+									],
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Wellington.Keebler"
+										},
+										{
+											"key": "password",
+											"value": "invalidPassword"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Feb 2025 11:20:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "X-Expires-After",
+									"value": "Sat Feb 22 12:20:14 UTC 2025"
+								},
+								{
+									"key": "X-Rate-Limit",
+									"value": "5000"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"logged in user session:1740223214133\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login with Valid Credentials",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=HeoMa2CYlY6ov_7",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								},
+								{
+									"key": "password",
+									"value": "HeoMa2CYlY6ov_7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_102 | User tries to log in with invalid credentials | User exists | Attempt login with wrong credentials → Verify error → Login with correct credentials | Incorrect logins fail; correct login succeeds |"
+		},
+		{
+			"name": "TC_103",
+			"item": [
+				{
+					"name": "Register New User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let requestBody = JSON.parse(pm.request.body.raw);\r",
+									"console.log(requestBody);\r",
+									"pm.test(\"set Username to collection variable\", ()=> {\r",
+									"\tif(requestBody.hasOwnProperty(\"username\")){\r",
+									"\t\tpm.collectionVariables.set(\"username\", requestBody.username);\r",
+									"\t}\r",
+									"\telse\r",
+									"\t{\r",
+									"\t\tpm.expect.fail(\"username does not exist\");\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "apikey",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "special-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 0,\r\n\t\"username\": \"{{$randomUserName}}\",\r\n\t\"firstName\": \"{{$randomFirstName}}\",\r\n\t\"lastName\": \"{{$randomLastName}}\",\r\n\t\"email\": \"{{$randomEmail}}\",\r\n\t\"password\": \"{{$randomPassword}}\",\r\n\t\"phone\": \"{{$randomPhoneNumber}}\",\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check New User is created",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check username is correct\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.hasOwnProperty(\"username\"))\r",
+									"\t\tpm.expect(res.username).to.be.eq(pm.collectionVariables.get(\"username\"));\r",
+									"\telse\r",
+									"\t\tpm.expect.fail(\"username does not exist in response\");\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": {{$randomUUID}},\r\n\t\"username\": {{$randomUserName}},\r\n\t\"firstName\": {{$randomFirstName}},\r\n\t\"lastName\": {{$randomLastName}},\r\n\t\"email\": {{$randomEmail}},\r\n\t\"password\": {{$randomPassword}},\r\n\t\"phone\": {{$randomPhoneNumber}},\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Details - Phone Number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let requestBody = JSON.parse(pm.request.body.raw);\r",
+									"console.log(requestBody);\r",
+									"\r",
+									"pm.test(\"set update body to collection variable\", ()=> {\r",
+									"\tif(requestBody){\r",
+									"\t\tpm.collectionVariables.set(\"requestBody\", JSON.stringify(requestBody));\r",
+									"\t}\r",
+									"\telse\r",
+									"\t{\r",
+									"\t\tpm.expect.fail(\"requestBody does not exist\");\r",
+									"\t}\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phone\": \"{{$randomPhoneNumber}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check User Details Updated - Phone Number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check phone is updated as required\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.hasOwnProperty(\"phone\")){\r",
+									"\t\tpm.expect(res.phone).to.be.eq(JSON.parse(pm.collectionVariables.get(\"requestBody\")).phone);\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"phone does not exists\")\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect in Phone number updation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://petstore.swagger.io/v2/user/:username",
+									"protocol": "https",
+									"host": [
+										"petstore",
+										"swagger",
+										"io"
+									],
+									"path": [
+										"v2",
+										"user",
+										":username"
+									],
+									"variable": [
+										{
+											"key": "username",
+											"value": "{{username}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Feb 2025 09:53:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9223372036854755930,\n    \"username\": \"Sadie.Kuhn\",\n    \"firstName\": \"Mavis\",\n    \"lastName\": \"Lockman\",\n    \"email\": \"Emmalee_Gerhold90@yahoo.com\",\n    \"password\": \"NWGJcVLTZXuzXRf\",\n    \"phone\": \"911-822-1789\",\n    \"userStatus\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete created user",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "apikey",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "special-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check user is Deleted",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"error message user not found\", ()=>{\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tpm.expect(res.message).to.be.eq(\"User not found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": {{$randomUUID}},\r\n\t\"username\": {{$randomUserName}},\r\n\t\"firstName\": {{$randomFirstName}},\r\n\t\"lastName\": {{$randomLastName}},\r\n\t\"email\": {{$randomEmail}},\r\n\t\"password\": {{$randomPassword}},\r\n\t\"phone\": {{$randomPhoneNumber}},\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/:username",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "shayne.nicolas"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_103 | User registers, updates, and deletes their account | Username is unique | Register → Verify user → Update details → Verify update → Delete user → Confirm deletion | User can register, update, and delete account successfully |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"Check user is Deleted\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_104",
+			"item": [
+				{
+					"name": "GET Sold Pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status of the pet is sold\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.status)\r",
+									"\t{\r",
+									"\t\tpm.expect(res.status).to.be.equal(\"sold\");\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"status property is not available\");\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "{{soldPet}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post order to a sold pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"order should not be created and status code to be 400\", ()=> {\r",
+									"\tpm.response.to.have.status(400);\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{petId}},\r\n  \"quantity\": {{$randomInt}},\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - order should not have been placed as pet is sold",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{petId}},\r\n  \"quantity\": {{$randomInt}},\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}store/order",
+									"host": [
+										"{{BASE_URL}}store"
+									],
+									"path": [
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Feb 2025 13:29:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 143,\n    \"petId\": 121,\n    \"quantity\": 588,\n    \"shipDate\": \"2025-02-03T16:13:11.214+0000\",\n    \"status\": \"placed\",\n    \"complete\": true\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_104 | User tries to order an out-of-stock pet | Pet is marked as 'sold' | Attempt order → Verify system rejects order | System prevents purchase of unavailable pets |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"Post order to a sold pet\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_105",
+			"item": [
+				{
+					"name": "Check more than 10 pets available",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check more than 10 pets available\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tpm.expect(res.length).to.be.greaterThan(10);\r",
+									"})\r",
+									"\r",
+									"let res = pm.response.json();\r",
+									"\r",
+									"let petIds = res.map(pet => pet.id).slice(0,10);\r",
+									"pm.collectionVariables.set(\"petIds\", JSON.stringify(petIds));"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/findByStatus?status=available",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available"
+								},
+								{
+									"key": "status",
+									"value": "sold",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Pet Order Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let petIds = JSON.parse(pm.collectionVariables.get(\"petIds\"));\r",
+									"console.log(petIds)\r",
+									"let randomPetId = petIds[Math.floor(Math.random() * petIds.length)];\r",
+									"console.log(randomPetId);\r",
+									"pm.variables.set(\"randomPetId\", randomPetId);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check response time is below 2 seconds\", ()=> {\r",
+									"\tpm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Order status is 'placed'\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.status).to.equal(\"placed\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{randomPetId}},\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_105 | System handles high concurrent orders | 10+ pets available | Place 100+ simultaneous orders → Monitor response times → Verify orders | System handles load, no duplicate sales occur |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"Post order to a sold pet\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_106",
+			"item": [
+				{
+					"name": "Place an order",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check response time is below 2 seconds\", ()=> {\r",
+									"\tpm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Order status is 'placed'\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.status).to.equal(\"placed\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{petId}},\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a ordered pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {\r",
+									"    \tpm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "{{petId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_106 | Admin tries to delete a pet while an order is in progress | Active order exists for pet | Place order → Attempt pet deletion → Verify system prevents deletion | System blocks pet deletion during active orders |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"Delete a ordered pet\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_107",
+			"item": [
+				{
+					"name": "Update a pet without admin rights",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status code to be 405\", ()=> {\r",
+									"\tpm.response.status.to.be(401)\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet/",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - pet should not have been updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://petstore.swagger.io/v2/pet/",
+									"protocol": "https",
+									"host": [
+										"petstore",
+										"swagger",
+										"io"
+									],
+									"path": [
+										"v2",
+										"pet",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Feb 2025 16:27:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9223372036854256229,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"string\"\n    },\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_104 | Admin tries to delete a pet while an order is in progress | Active order exists for pet | Place order → Attempt pet deletion → Verify system prevents deletion | System blocks pet deletion during active orders |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_108",
+			"item": [
+				{
+					"name": "Retrieve Invalid  Pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status code to be 404\", ()=> {\r",
+									"\tpm.response.to.have.status(404);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"response body property of type be error\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\tpm.expect(res.type).to.be.equal(\"error\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"response message to be Pet not found\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\tpm.expect(res.message).to.be.equal(\"Pet not found\");\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_108 | Retrieve a pet using an invalid ID | None | Request GET /pet/{invalidPetId} → Verify response | System returns '404 Not Found' |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_109",
+			"item": [
+				{
+					"name": "Place Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check response time is below 2 seconds\", ()=> {\r",
+									"\tpm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Order status is 'placed'\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.status).to.equal(\"placed\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"set orderId\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.hasOwnProperty(\"id\")){\r",
+									"\t\tpm.collectionVariables.set(\"orderId\", res.id);\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"orderId is not present in the response\");\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{$randomInt}},\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a placed order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_109 | User places an order and later cancels it | Pet exists, user is logged in | Place order → Verify success → Cancel order → Verify cancellation | Order is placed and successfully canceled |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_110",
+			"item": [
+				{
+					"name": "Place Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check response time is below 2 seconds\", ()=> {\r",
+									"\tpm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Order status is 'placed'\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.status).to.equal(\"placed\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"set orderId\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res.hasOwnProperty(\"id\")){\r",
+									"\t\tpm.collectionVariables.set(\"orderId\", res.id);\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"orderId is not present in the response\");\r",
+									"\t}\r",
+									"})\r",
+									"\r",
+									"pm.test(\"set order details\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tif(res){\r",
+									"\t\tpm.collectionVariables.set(\"orderDetails\", JSON.stringify(res));\r",
+									"\t}\r",
+									"\telse {\r",
+									"\t\tpm.expect.fail(\"order details not generated\");\r",
+									"\t}\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{$randomInt}},\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Order Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJsonSchema = {\r",
+									"  \"type\": \"object\",\r",
+									"  \"properties\": {\r",
+									"    \"id\": {\r",
+									"      \"type\": \"integer\"\r",
+									"    },\r",
+									"    \"petId\": {\r",
+									"      \"type\": \"integer\"\r",
+									"    },\r",
+									"    \"quantity\": {\r",
+									"      \"type\": \"integer\"\r",
+									"    },\r",
+									"    \"shipDate\": {\r",
+									"      \"type\": \"string\"\r",
+									"    },\r",
+									"    \"status\": {\r",
+									"      \"type\": \"string\"\r",
+									"    },\r",
+									"    \"complete\": {\r",
+									"      \"type\": \"boolean\"\r",
+									"    }\r",
+									"  },\r",
+									"  \"required\": [\r",
+									"    \"id\",\r",
+									"    \"petId\",\r",
+									"    \"quantity\",\r",
+									"    \"shipDate\",\r",
+									"    \"status\",\r",
+									"    \"complete\"\r",
+									"  ]\r",
+									"};\r",
+									"\r",
+									"pm.test(\"validate order details as placed\", ()=> {\r",
+									"\tlet res = pm.response.json();\r",
+									"\r",
+									"\tpm.response.to.have.jsonSchema(responseJsonSchema)\r",
+									"});\t"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_110 | Verify Order Retrieval After Placement | Order placement should be allowed | Place order → Capture orderId → Retrieve order → Verify order details → Verify status field | Retrieved order matches the original request, and API response is 200 OK |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_111",
+			"item": [
+				{
+					"name": "Delete a non-existent pet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status code to be 404\", ()=> {\r",
+									"\tpm.response.to.have.status(404);\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/:petId",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								":petId"
+							],
+							"variable": [
+								{
+									"key": "petId",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_111 | Attempt to delete a non-existent pet | None | Request DELETE /pet/{nonexistentPetId} → Verify response | System returns '404 Not Found' |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_112",
+			"item": [
+				{
+					"name": "Retrieve Order Details - Performance Test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response time is within limits\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000); // Adjust limit as needed\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"packages": {},
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}store/order/:orderId",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_112 | Verify API response times under load | API load testing tools set up | Simulate 500 concurrent API calls → Measure response times | Response times stay within acceptable limits |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_113",
+			"item": [
+				{
+					"name": "Check pets status is only available",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify all pets have available status\", () => {\r",
+									"    let responseData = pm.response.json();\r",
+									"\r",
+									"    responseData.forEach(pet => {\r",
+									"        pm.expect(pet.status).to.be.equal(\"available\");\r",
+									"    });\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}pet/findByStatus?status=available",
+							"host": [
+								"{{BASE_URL}}pet"
+							],
+							"path": [
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available"
+								},
+								{
+									"key": "status",
+									"value": "sold",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_113 | User retrieves all pets with 'available' status | None | Request GET /pet/findByStatus?status=available → Verify response | Only available pets are listed |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"if (pm.info.requestName !== \"\") {\r",
+							"    pm.test(\"Status code is 200\", () => {\r",
+							"    \tpm.response.to.have.status(200);\r",
+							"\t});\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_114",
+			"item": [
+				{
+					"name": "Create a Pet with incomplete body",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", () => {\r",
+									"    \tpm.response.to.have.status(400);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}pet",
+							"host": [
+								"{{BASE_URL}}pet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - pet is getting created with invalid body",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}pet",
+									"host": [
+										"{{BASE_URL}}pet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 23 Feb 2025 15:24:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9223372016900024107,\n    \"photoUrls\": [],\n    \"tags\": []\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_110 | Attempt to create a pet with missing required fields | None | Send POST /pet with missing fields → Verify response | System returns '400 Bad Request' |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_115",
+			"item": [
+				{
+					"name": "Place Order with negative quantity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", () => {\r",
+									"    \tpm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{$randomInt}},\r\n  \"quantity\": -5,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - Order is created with negative quantity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": {{$randomInt}},\r\n  \"quantity\": -5,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}store/order",
+									"host": [
+										"{{BASE_URL}}store"
+									],
+									"path": [
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 01 Mar 2025 07:55:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 695,\n    \"petId\": 238,\n    \"quantity\": -5,\n    \"shipDate\": \"2025-02-03T16:13:11.214+0000\",\n    \"status\": \"placed\",\n    \"complete\": true\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_115 | User tries to place an order with a negative quantity | A pet is available for purchase | Send a POST request to /store/order with a quantity value of -5 → 2. Verify API response | The system should reject the order and return a 400 Bad Request error |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_116",
+			"item": [
+				{
+					"name": "Place Order with invalid petId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", () => {\r",
+									"    \tpm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"petId\": -100,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-02-03T16:13:11.214Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}store/order",
+							"host": [
+								"{{BASE_URL}}store"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_116 | Attempt to place an order with an invalid pet ID | None | Send POST /store/order with invalid petId → Verify response | System returns '400 Bad Request' |",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "TC_117",
+			"item": [
+				{
+					"name": "Login with SQL injection",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400 or 401\", () => {\r",
+									"    const responseBody = pm.response.json();\r",
+									"\tpm.expect(responseBody.code === 400 || responseBody.code === 401).to.be.true\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=' OR '1'='1' -- &password=xyz\n",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "' OR '1'='1' -- "
+								},
+								{
+									"key": "password",
+									"value": "xyz\n"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - to be login with sql injection",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}user/login?username=' OR '1'='1' -- &password=xyz\n",
+									"host": [
+										"{{BASE_URL}}user"
+									],
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "' OR '1'='1' -- "
+										},
+										{
+											"key": "password",
+											"value": "xyz\n"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 23 Feb 2025 18:12:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "X-Expires-After",
+									"value": "Sun Feb 23 19:12:41 UTC 2025"
+								},
+								{
+									"key": "X-Rate-Limit",
+									"value": "5000"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"logged in user session:1740334361202\"\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_117 | Verify API security (SQL injection attempt) | None | Send GET /user/login?username=' OR '1'='1' -- &password=xyz → Verify response | System rejects SQL injection attempt |"
+		},
+		{
+			"name": "TC_118",
+			"item": [
+				{
+					"name": "Login with Valid Credentials",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=HeoMa2CYlY6ov_7",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								},
+								{
+									"key": "password",
+									"value": "HeoMa2CYlY6ov_7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_118 | Test API rate limiting | API rate limits defined | Send 1000+ requests in 1 minute → Verify system blocks excess requests | API enforces rate limits correctly |"
+		},
+		{
+			"name": "TC_119",
+			"item": [
+				{
+					"name": "Create new user with existing username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status code to be 400\", ()=> {\r",
+									"\tpm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "apikey",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "special-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 0,\r\n\t\"username\": \"{{username}}\",\r\n\t\"firstName\": \"{{$randomFirstName}}\",\r\n\t\"lastName\": \"{{$randomLastName}}\",\r\n\t\"email\": \"{{$randomEmail}}\",\r\n\t\"password\": \"{{$randomPassword}}\",\r\n\t\"phone\": \"{{$randomPhoneNumber}}\",\r\n\t\"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Defect - New user created with existing username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"id\": 0,\r\n\t\"username\": \"{{username}}\",\r\n\t\"firstName\": \"{{$randomFirstName}}\",\r\n\t\"lastName\": \"{{$randomLastName}}\",\r\n\t\"email\": \"{{$randomEmail}}\",\r\n\t\"password\": \"{{$randomPassword}}\",\r\n\t\"phone\": \"{{$randomPhoneNumber}}\",\r\n\t\"userStatus\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://petstore.swagger.io/v2/user",
+									"protocol": "https",
+									"host": [
+										"petstore",
+										"swagger",
+										"io"
+									],
+									"path": [
+										"v2",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 23 Feb 2025 18:19:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854758441\"\n}"
+						}
+					]
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_119 | User tries to create an account with an existing username | Username already exists | Send POST /user with existing username → Verify response | System rejects duplicate username |"
+		},
+		{
+			"name": "TC_120",
+			"item": [
+				{
+					"name": "Login with Valid Credentials",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 503\", () => {\r",
+									"    pm.response.to.have.status(503);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}user/login?username=Wellington.Keebler&password=HeoMa2CYlY6ov_7",
+							"host": [
+								"{{BASE_URL}}user"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Wellington.Keebler"
+								},
+								{
+									"key": "password",
+									"value": "HeoMa2CYlY6ov_7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "| Test Case ID | Scenario | Preconditions | Test Steps | Expected Result |\n| --- | --- | --- | --- | --- |\n| TC_120 | Verify API response when backend service is down | Simulate database or service outage | Send API requests → Verify error handling | API returns a meaningful error message ('503 Service Unavailable') |"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "special-key",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "apikey",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://petstore.swagger.io/v2/",
+			"type": "string"
+		},
+		{
+			"key": "petId",
+			"value": ""
+		},
+		{
+			"key": "orderId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": ""
+		},
+		{
+			"key": "requestBody",
+			"value": ""
+		},
+		{
+			"key": "petIds",
+			"value": ""
+		},
+		{
+			"key": "orderDetails",
+			"value": ""
+		},
+		{
+			"key": "soldPet",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
