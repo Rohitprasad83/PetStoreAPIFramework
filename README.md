@@ -14,7 +14,7 @@ This is an automated testing framework for the Pet Store API, built using REST A
 - Modular and maintainable test structure
 
 ## Project Structure
-
+````
 PetStoreAPIFramework/
 ├── src/
 │ └── test/
@@ -30,7 +30,7 @@ PetStoreAPIFramework/
 ├── logs/ # Test execution logs
 ├── test-output/ # Test reports
 └── pom.xml # Project dependenciesdependencies
-
+````
 ## Prerequisites
 - Java JDK 11 or higher
 - Maven 3.8.x or higher
