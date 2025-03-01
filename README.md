@@ -17,19 +17,19 @@ This is an automated testing framework for the Pet Store API, built using REST A
 
 PetStoreAPIFramework/
 ├── src/
-│   └── test/
-│       ├── java/
-│       │   └── api/
-│       │       ├── endpoints/    # API endpoint configurations
-│       │       ├── payload/      # POJO classes for request/response
-│       │       ├── utilities/    # Helper classes and utilities
-│       │       └── test/         # Test classes
-│       └── resources/
-│           ├── log4j2.xml       # Logging configuration
-│           └── testng.xml       # Test suite configuration
-├── logs/                        # Test execution logs
-├── test-output/                 # Test reports
-└── pom.xml                      # Project dependencies
+│ └── test/
+│ ├── java/
+│ │ └── api/
+│ │ ├── endpoints/ # API endpoint configurations
+│ │ ├── payload/ # POJO classes for request/response
+│ │ ├── utilities/ # Helper classes and utilities
+│ │ └── test/ # Test classes
+│ └── resources/
+│ ├── log4j2.xml # Logging configuration
+│ └── testng.xml # Test suite configuration
+├── logs/ # Test execution logs
+├── test-output/ # Test reports
+└── pom.xml # Project dependenciesdependencies
 
 ## Prerequisites
 - Java JDK 11 or higher
